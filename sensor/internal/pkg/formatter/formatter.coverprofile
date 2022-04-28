@@ -1,0 +1,11 @@
+mode: atomic
+github.com/denislavPetkov/sensor/internal/pkg/formatter/formatter.go:18.88,20.24 1 3
+github.com/denislavPetkov/sensor/internal/pkg/formatter/formatter.go:21.20,22.29 1 1
+github.com/denislavPetkov/sensor/internal/pkg/formatter/formatter.go:23.20,24.29 1 1
+github.com/denislavPetkov/sensor/internal/pkg/formatter/formatter.go:25.10,27.52 2 1
+github.com/denislavPetkov/sensor/internal/pkg/formatter/formatter.go:32.54,34.16 2 1
+github.com/denislavPetkov/sensor/internal/pkg/formatter/formatter.go:38.2,40.34 2 1
+github.com/denislavPetkov/sensor/internal/pkg/formatter/formatter.go:34.16,37.3 2 0
+github.com/denislavPetkov/sensor/internal/pkg/formatter/formatter.go:43.54,45.16 2 1
+github.com/denislavPetkov/sensor/internal/pkg/formatter/formatter.go:49.2,51.34 2 1
+github.com/denislavPetkov/sensor/internal/pkg/formatter/formatter.go:45.16,48.3 2 0

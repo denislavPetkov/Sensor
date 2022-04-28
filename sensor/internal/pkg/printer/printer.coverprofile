@@ -1,0 +1,6 @@
+mode: atomic
+github.com/denislavPetkov/sensor/internal/pkg/printer/printer.go:11.35,13.2 1 0
+github.com/denislavPetkov/sensor/internal/pkg/printer/printer.go:15.46,17.2 1 0
+github.com/denislavPetkov/sensor/internal/pkg/printer/printer.go:19.56,24.16 3 1
+github.com/denislavPetkov/sensor/internal/pkg/printer/printer.go:30.2,32.25 2 1
+github.com/denislavPetkov/sensor/internal/pkg/printer/printer.go:24.16,28.3 3 0

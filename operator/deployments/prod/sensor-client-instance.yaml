@@ -1,0 +1,15 @@
+apiVersion: sensor.cli/v1
+kind: SensorClient
+metadata:
+  name: sensorclient # Unique name of the sensor client
+spec:
+  arguments: # The contents of this section would be passed as arguments to the sensor client
+    delta_duration: 1
+    total_duration: 30
+    format: 'JSON'
+    sensor_groups:
+      - 'CPU_USAGE'
+      - 'CPU_TEMP'
+  sensor_client_image: docker.io/sensor/cli:0.0.1
+  replicas_count: 2
+  deployment_waiting_timeout: 30 # After the time specified here if the deployment is not ready a time-out is issued and status set to 'Failed'

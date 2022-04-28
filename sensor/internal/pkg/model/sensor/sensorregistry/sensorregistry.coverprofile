@@ -1,0 +1,12 @@
+mode: atomic
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorregistry/sensor_registry.go:12.96,15.52 2 1
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorregistry/sensor_registry.go:24.2,24.16 1 1
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorregistry/sensor_registry.go:15.52,17.51 2 1
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorregistry/sensor_registry.go:17.51,18.68 1 1
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorregistry/sensor_registry.go:18.68,20.5 1 1
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorregistry/sensor_registry.go:27.76,30.2 2 1
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorregistry/sensor_registry.go:32.50,37.2 2 1
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorregistry/sensor_registry.go:39.84,40.45 1 1
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorregistry/sensor_registry.go:45.2,45.12 1 0
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorregistry/sensor_registry.go:40.45,41.77 1 1
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorregistry/sensor_registry.go:41.77,43.4 1 1

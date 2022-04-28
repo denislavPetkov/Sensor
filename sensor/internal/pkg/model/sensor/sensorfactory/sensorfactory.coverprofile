@@ -1,0 +1,14 @@
+mode: atomic
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorfactory/sensor_factory.go:17.48,19.2 1 1
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorfactory/sensor_factory.go:35.133,36.20 1 2
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorfactory/sensor_factory.go:37.32,38.75 1 1
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorfactory/sensor_factory.go:39.31,40.74 1 0
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorfactory/sensor_factory.go:41.30,42.73 1 0
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorfactory/sensor_factory.go:43.36,44.79 1 0
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorfactory/sensor_factory.go:45.27,46.70 1 0
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorfactory/sensor_factory.go:47.33,48.76 1 0
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorfactory/sensor_factory.go:49.29,50.72 1 0
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorfactory/sensor_factory.go:51.28,52.71 1 0
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorfactory/sensor_factory.go:53.38,54.81 1 0
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorfactory/sensor_factory.go:55.10,57.67 2 1
+github.com/denislavPetkov/sensor/internal/pkg/model/sensor/sensorfactory/sensor_factory.go:61.35,63.2 1 0

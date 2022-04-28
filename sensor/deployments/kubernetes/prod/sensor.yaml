@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sensor
+  namespace: sensor-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sensor
+  template:
+    metadata:
+      labels:
+        app: sensor
+    spec:
+      containers:
+        - name: sensor
+          # fix
+          image: docker.io/sensor/cli:0.0.1
+          imagePullPolicy: Always
+          env:
+            - name: CPU_TEMP
+              value: '-sensor_group=CPU_TEMP'
+            - name: CPU_USAGE
+              value: '-sensor_group=CPU_USAGE'
+          args: ['$(CPU_TEMP)', '$(CPU_USAGE)']

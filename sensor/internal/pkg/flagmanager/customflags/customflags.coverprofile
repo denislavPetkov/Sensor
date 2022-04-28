@@ -1,0 +1,5 @@
+mode: atomic
+github.com/denislavPetkov/sensor/internal/pkg/flagmanager/customflags/array_flag.go:7.43,8.14 1 2
+github.com/denislavPetkov/sensor/internal/pkg/flagmanager/customflags/array_flag.go:11.2,11.11 1 0
+github.com/denislavPetkov/sensor/internal/pkg/flagmanager/customflags/array_flag.go:8.14,10.3 1 2
+github.com/denislavPetkov/sensor/internal/pkg/flagmanager/customflags/array_flag.go:14.51,17.2 2 1

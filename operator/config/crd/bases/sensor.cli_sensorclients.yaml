@@ -1,0 +1,157 @@
+
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  annotations:
+    controller-gen.kubebuilder.io/version: v0.4.1
+  creationTimestamp: null
+  name: sensorclients.sensor.cli
+spec:
+  group: sensor.cli
+  names:
+    kind: SensorClient
+    listKind: SensorClientList
+    plural: sensorclients
+    singular: sensorclient
+  scope: Namespaced
+  versions:
+  - additionalPrinterColumns:
+    - jsonPath: .status.conditions.status
+      name: LastOperationSucceeded
+      type: string
+    - jsonPath: .spec.replicas_count
+      name: Replicas
+      type: integer
+    name: v1
+    schema:
+      openAPIV3Schema:
+        description: SensorClient is the Schema for the sensorclients API
+        properties:
+          apiVersion:
+            description: 'APIVersion defines the versioned schema of this representation
+              of an object. Servers should convert recognized schemas to the latest
+              internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+            type: string
+          kind:
+            description: 'Kind is a string value representing the REST resource this
+              object represents. Servers may infer this from the endpoint the client
+              submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+            type: string
+          metadata:
+            type: object
+          spec:
+            description: SensorClientSpec defines the desired state of SensorClient
+            properties:
+              arguments:
+                description: Arguments are the commands to run the sensor client with
+                properties:
+                  delta_duration:
+                    description: Delta_duration is the time in seconds between each
+                      measurement by the sensor
+                    type: integer
+                  format:
+                    description: Format is the format of the output
+                    type: string
+                  sensor_groups:
+                    description: Sensor_groups are the sensor groups to run the sensor
+                      with
+                    items:
+                      type: string
+                    type: array
+                  total_duration:
+                    description: Total_duration is the time in seconds after which
+                      the sensor stops
+                    type: integer
+                  web_hook_url:
+                    description: Web_hook_url is the url to send the measurements
+                      to
+                    type: string
+                required:
+                - sensor_groups
+                type: object
+              deployment_waiting_timeout:
+                description: deployment_waiting_timeout is the time waited in seconds
+                  for the deployment to become ready
+                format: int32
+                minimum: 10
+                type: integer
+              image_pull_secrets:
+                description: Image_pull_secrets are the secrets needed to pull the
+                  image
+                items:
+                  description: LocalObjectReference contains enough information to
+                    let you locate the referenced object inside the same namespace.
+                  properties:
+                    name:
+                      description: 'Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+                        TODO: Add other useful fields. apiVersion, kind, uid?'
+                      type: string
+                  type: object
+                type: array
+              replicas_count:
+                description: replicas_count is the number of replicas in the sensor
+                  client deployment
+                format: int32
+                minimum: 1
+                type: integer
+              sensor_client_image:
+                description: Sensor_client_image is the image for the sensor client
+                type: string
+            required:
+            - arguments
+            - deployment_waiting_timeout
+            - replicas_count
+            - sensor_client_image
+            type: object
+          status:
+            description: SensorClientStatus defines the observed state of SensorClient
+            properties:
+              conditions:
+                description: Conditions represent the latest available observations
+                  of the sensor client's state
+                properties:
+                  lastTransitionTime:
+                    description: Last time the condition transitioned from one status
+                      to another.
+                    format: date-time
+                    type: string
+                  message:
+                    description: A human readable message indicating details about
+                      the transition.
+                    type: string
+                  reason:
+                    description: The reason for the condition's last transition.
+                    maxLength: 1024
+                    minLength: 1
+                    type: string
+                  status:
+                    description: Status of the condition, one of True, False, Unknown.
+                    enum:
+                    - "True"
+                    - "False"
+                    - Unknown
+                    type: string
+                  type:
+                    description: Type of sensor client condition.
+                    type: string
+                required:
+                - lastTransitionTime
+                - reason
+                - status
+                - type
+                type: object
+            required:
+            - conditions
+            type: object
+        type: object
+    served: true
+    storage: true
+    subresources:
+      status: {}
+status:
+  acceptedNames:
+    kind: ""
+    plural: ""
+  conditions: []
+  storedVersions: []

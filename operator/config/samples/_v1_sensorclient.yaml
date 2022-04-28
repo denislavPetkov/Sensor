@@ -1,0 +1,15 @@
+apiVersion: sensor.cli/v1
+kind: SensorClient
+metadata:
+  name: sensorclient
+spec:
+  arguments:
+    delta_duration: 40
+    total_duration: 720
+    format: 'JSON'
+    sensor_groups:
+      - CPU_USAGE
+      - CPU_TEMP
+  sensor_client_image: docker.io/sensor/cli:0.0.1
+  replicas_count: 2
+  deployment_waiting_timeout: 30
